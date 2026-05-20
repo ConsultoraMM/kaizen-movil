@@ -9,7 +9,7 @@ st.title("Registro Kaizen")
 with st.form("registro"):
     descripcion = st.text_input("Descripción")
     monto = st.number_input("Monto en Bs", min_value=0.0)
-    categoria = st.selectbox("Categoría", ["Operación", "Inversión", "Personal"])
+    categoria = st.selectbox("Categoría", ["Comida", "Gastos Operativos", "Insumos Papelería", "Personal / Casa", "Ventas"])
     enviar = st.form_submit_button("Registrar")
 
 if enviar:
